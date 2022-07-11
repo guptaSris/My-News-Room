@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.mynewsroom.ui.bbc.HomeFragment"
+        android:label="@string/bbc"
+        tools:layout="@layout/fragment_home"  />
+
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.mynewsroom.ui.cnn.GalleryFragment"
+        android:label="@string/cnn"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.mynewsroom.ui.foxnews.SlideshowFragment"
+        android:label="@string/fox"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/republic_news_fragment"
+        android:name="com.example.mynewsroom.Fragment.RepublicNewsFragment"
+        android:label="REPUBLIC NEWS"
+        tools:layout="@layout/fragment_republic_news" />
+</navigation>
